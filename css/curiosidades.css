@@ -1,0 +1,135 @@
+#datos-curiosos {
+    max-width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h2 {
+    color: var(--color-1);
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#datos-curiosos ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#datos-curiosos li {
+    color: var(--color-1);
+    flex: 1 1 450px;
+    max-width: 530px;
+    min-height: 580px;
+    margin: 0;
+    text-align: justify;
+    list-style: none;
+    border: 2px solid var(--color-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#datos-curiosos li p {
+    font-family: var(--font-2);
+    font-weight: 500;
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+#datos-curiosos h3 {
+    font-family: var(--font-3);
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#datos-curiosos em {
+    font-weight: bold;
+}
+
+.cajaimg {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    height: 200px;
+    text-align: center;
+}
+
+.cajaimg img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+
+hr {
+    margin-top: 15px;
+    border-top: 2px solid var(--color-1);
+    background-color: var(--color-3);
+    width: 100%;
+}
+
+#glosario {
+    padding: 20px 0 0 0;
+    background: linear-gradient(to bottom, var(--color-3), var(--color-1));
+    width: 100%;
+    height: auto;
+    text-align: justify;
+}
+
+#glosario p {
+    font-size: 1.2rem;
+    padding: 20px 50px;
+}
+
+.fichas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ficha {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1 1 240px;
+    max-width: 265px;
+    height: 600px;
+    margin: 0;
+    box-shadow: 2px 2px 6px var(--color-4);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: 2px solid var(--color-2);
+    overflow: hidden;
+}
+
+#glosario .dato {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.88), 85%, transparent);
+    margin: 0;
+    text-align: center;
+    color: var(--color-1);
+    text-shadow: 1px 1px black;
+    padding: 15px 12px;
+    font-size: 1.05rem;
+    line-height: normal;
+    width: 100%;
+    box-sizing: border-box;
+}

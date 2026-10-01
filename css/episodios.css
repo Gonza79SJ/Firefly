@@ -1,0 +1,192 @@
+main {
+    color: var(--color-1);
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nota {
+    color: var(--color-2);
+    text-align: justify;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 1100px;
+    padding: 0 20px;
+    font-family: var(--font-2);
+}
+
+.nota strong {
+    color: var(--color-1);
+    text-transform: uppercase;
+    font-family: var(--font-3);
+    text-shadow: 2px 2px var(--color-4);
+}
+
+/* ============================================================
+   MINI NAVEGADOR CON FLEXBOX
+   ============================================================ */
+.mini-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: black;
+    border: 1px solid var(--color-4);
+    margin: 15px auto;
+    padding: 12px 20px;
+    width: 90%;
+    max-width: 1100px;
+    box-sizing: border-box;
+}
+
+.mini-nav p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.mini-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mini-nav ul li {
+    margin: 0;
+}
+
+.mini-nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.mini-nav ul li a:hover {
+    background-color: var(--color-2);
+    transform: scale(1.08);
+}
+
+.mini-nav ul li a.enlace-peli {
+    width: auto;
+    padding: 5px 12px;
+}
+
+/* ============================================================
+   GRILLA DE EPISODIOS CON FLEXBOX
+   ============================================================ */
+main ol {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main ol li {
+    flex: 1 1 450px;
+    max-width: 540px;
+    margin: 0;
+    display: flex;
+}
+
+main article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid var(--color-4);
+}
+
+#pelicula {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    border: 2px solid var(--color-2); /* Color 2 unificado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-episodio h3,
+#pelicula h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.ficha-episodio img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    margin: 15px 0;
+    box-shadow: 4px 4px var(--color-3);
+    display: block;
+}
+
+#pelicula img {
+    width: 300px;
+    max-width: 90%;
+    margin: 15px auto;
+    box-shadow: 4px 4px var(--color-3);
+    display: block;
+}
+
+.ficha-episodio div,
+#pelicula div {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+main div p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+main div p strong {
+    font-family: var(--font-3);
+    text-shadow: 1px 1px 1px var(--color-4);
+}
+
+.boton-video {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 4px;
+    align-self: center;
+    transition: all 0.3s ease;
+}
+
+.boton-video:hover {
+    background-color: var(--color-2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

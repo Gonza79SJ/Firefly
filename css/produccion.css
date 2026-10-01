@@ -1,0 +1,129 @@
+#menu-produccion {
+    color: var(--color-2);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+ul {
+    background-color: var(--color-4);
+    margin: 10px;
+}
+
+li {
+    color: var(--color-5);
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.3em;
+    width: 350px;
+    vertical-align: middle;
+}
+
+hr {
+    margin: 0 auto;
+}
+
+#creacion, #banda-sonora {
+    color: var(--color-1);
+
+}
+
+
+#creacion figure,
+#banda-sonora figure {
+    box-shadow: 4px 4px 4px var(--color-3);
+    width: 600px;
+}
+
+#creacion figure img,
+#banda-sonora figure img {
+    margin: 10px;
+    box-shadow: 4px 4px rgba(255, 255, 255, 0.575);
+}
+
+#rescate {
+    background: radial-gradient(circle at center, var(--color-1), var(--color-2));
+    color: var(--color-5);
+}
+
+#rescate figure {
+    background-color: var(--color-5);
+    color: var(--color-1);
+}
+
+#rescate figure img {
+    margin: 10px;
+    box-shadow: 4px 4px rgba(255, 255, 255, 0.575);
+}
+
+#rescate a {
+    display: inline;
+}
+
+#rescate strong {
+    text-shadow: 2px 2px 2px var(--color-3) !important;
+
+}
+
+#banda-sonora blockquote {
+    margin: 0 50px;
+    font-style: italic;
+}
+
+#banda-sonora blockquote small {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+main h3 {
+    text-shadow: 2px 2px 2px var(--color-4);
+    padding-bottom: 20px;
+}
+
+main p {
+    text-align: justify;
+    margin: 15px 100px;
+    padding: 0;
+}
+
+main p strong {
+    font-family: var(--font-3);
+    text-shadow: 2px 2px 2px var(--color-4);
+}
+
+main p em {
+    font-weight: bold;
+}
+
+main .arriba {
+    display: block !important;
+    text-align: right;
+}
+
+section {
+    font-family: var(--font-2);
+    text-align: center;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+main figure {
+    display: inline-block;
+    border: 1px solid;
+    box-shadow: 4px 4px 4px var(--color-3);
+    width: 600px;
+}
+
+main figcaption {
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+main iframe {
+    border: 2px;
+    box-shadow: 4px 4px 4px var(--color-1);
+    height: 85px;
+}
