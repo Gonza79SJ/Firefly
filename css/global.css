@@ -29,6 +29,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-5);
     margin: 0 auto;
     max-width: 1200px;
@@ -39,12 +41,20 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
 .subtitulo  {
+    width: 90%;
     color: var(--color-1);
     font-family: var(--font-1);
     text-transform: uppercase;
@@ -109,17 +119,43 @@ nav a:hover {
     color: var(--color-5);
     border-color: var(--color-3);
     box-shadow: 0 2px 8px rgba(254, 188, 47, 0.4);
-    transform: translateY(-2px);
+    transform: scale(1.2);
+    margin: 8px;
+}
+
+/* Ocultar <a> de la barra de navegación en la página */
+body.index nav a:nth-child(1),
+body.reparto nav a:nth-child(2),
+body.curiosidades nav a:nth-child(3),
+body.produccion nav a:nth-child(4),
+body.videos nav a:nth-child(5),
+body.episodios nav a:nth-child(6),
+body.sobre nav a:nth-child(7),
+body.contacto nav a:nth-child(8) {
+    /* display: none; */
+    background-color: var(--color-3);
+    color: var(--color-5);
 }
 
 .banner {
+    justify-content: space-between;
     background-image: url('../img/fondofirefly.webp');
     background-size: cover;
-    width: 1200px;
+    background-position: center;
     height: 740px;
 }
 
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    gap: 20px;
+}
+
 .bienvenida h1 {
+    width: 100%;
     color: var(--color-1);
     font-family: var(--font-1);
     font-size: 48px;
@@ -130,8 +166,8 @@ nav a:hover {
 }
 
 .bienvenida p {
-    height: 200px;
-    margin: 20px 50px 20px 600px;
+    margin-left: 50%;
+    width: 50%;
     color: var(--color-3);
     font-family: var(--font-2);
     font-size: 15px;
@@ -149,10 +185,9 @@ nav a:hover {
 }
 
 .razones {
-    border-radius: 30px;
-    height: 150px;
-    width: 450px;
-    margin: 150px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     color: var(--color-1);
     font-family: var(--font-2);
     text-align: center;
@@ -161,13 +196,16 @@ nav a:hover {
         1px -1px 1px var(--color-5),
         -1px 1px 1px var(--color-5),
         1px 1px 1px var(--color-5);
+    padding: 150px 30px 0px 30px;
 }
 
 .razones h2 {
+    width: 30%;
     font-size: 28px;
 }
 
 .razones li {
+    width: 40%;
     font-size: 15px;
     text-align: left;
     margin-left: 20px;
@@ -180,17 +218,19 @@ nav a:hover {
 }
 
 .proximos-pasos {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to top, black, black 50%, transparent);
-    height: 120px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding: 20px 30px;
     color: var(--color-1);
     font-family: var(--font-2);
     font-size: 15px;
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.7;
+    
 }
 
 .proximos-pasos h2 {
@@ -200,7 +240,16 @@ nav a:hover {
     /* text-shadow: 2px 2px 4px var(--color-4); */
 }
 
+.proximos-pasos span {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-around;
+
+}
 .proximos-pasos a {
+    width: 18%;
     line-height: 20px;
     font-size: 15px;
     color: var(--color-4);
@@ -209,7 +258,7 @@ nav a:hover {
 hr {
     background: black;
     width: 50%;
-    height: 2px;
+    height: px;
     border: none;
     background-color: var(--color-1);
     margin: 0 auto;
@@ -232,7 +281,7 @@ footer {
    CLASES GLOBALES DE CONTENEDORES Y TARJETAS UNIFICADAS
    ============================================================ */
 .caja {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding: 20px;
 }
 

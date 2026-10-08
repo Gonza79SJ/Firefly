@@ -1,7 +1,7 @@
 main {
     color: var(--color-1);
-    text-align: center;
-    padding: 20px;
+    /* text-align: center;
+    padding: 20px; */
 }
 
 .bajada, 
@@ -12,32 +12,40 @@ main {
 
 /* Contenedor Flexbox de Contacto */
 .contenedor-contacto-flex {
+    width: 90%;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-evenly;
+    /* align-items: stretch; */
+    /* flex-wrap: wrap; */
+    /* gap: 20px; */
 }
 
 .contenedor-contacto-flex .caja {
-    flex: 1 1 45%;
-    max-width: 45%;
+    /* flex: 1 1 45%; */
+    width: 45%;
 }
 
 .datos-contacto,
 .seccion-formulario {
-    flex: 1 1 450px;
+    /* flex: 1 1 450px; */
     max-width: 530px;
     text-align: left;
     border: 2px solid var(--color-4);
 }
 
 .datos-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     text-align: center;
 }
 
+.datos-contacto p {
+    margin: 15px 0;
+    font-size: 1rem;
+}
 .datos-contacto ul {
-    margin: 15px 0 0 20px;
+    margin: 15px 0;
     padding: 0;
     list-style: none;
 }

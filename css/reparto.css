@@ -1,20 +1,20 @@
-.reparto {
+.contenedor-fichas {
     color: var(--color-1);
     font-family: var(--font-2);
     text-shadow: 1px 1px black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding-bottom: 30px;
+    gap: 10px;
+    padding: 0 30px;
 }
 
 .actor {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    width: 100%;
+    gap: 10px;
+    width: 90%;
     max-width: 1050px;
     margin: 0 auto;
     border: 2px solid var(--color-2);
@@ -34,7 +34,7 @@
     height: auto;
     perspective: 1000px;
     flex-shrink: 0;
-    margin-right: 20px;
+
 }
 
 .flip-card-inner {
