@@ -125,11 +125,11 @@ nav a:hover {
 
 /* Ocultar <a> de la barra de navegación en la página */
 body.index nav a:nth-child(1),
-body.reparto nav a:nth-child(2),
-body.curiosidades nav a:nth-child(3),
-body.produccion nav a:nth-child(4),
-body.videos nav a:nth-child(5),
-body.episodios nav a:nth-child(6),
+body.episodios nav a:nth-child(2),
+body.reparto nav a:nth-child(3),
+body.videos nav a:nth-child(4),
+body.produccion nav a:nth-child(5),
+body.curiosidades nav a:nth-child(6),
 body.sobre nav a:nth-child(7),
 body.contacto nav a:nth-child(8) {
     /* display: none; */
@@ -139,22 +139,26 @@ body.contacto nav a:nth-child(8) {
 
 .banner {
     justify-content: space-between;
-    background-image: url('../img/firefly_banner.jpg');
+    background-image: url('../img/fondo_espacio.jpeg');
     background-size: cover;
     background-position: center;
     height: 740px;
 }
 
 .bienvenida {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 0 30px;
-    gap: 20px;
+    gap: 1.5rem 2.5rem;
+
+    grid-template-areas:
+        "titulo titulo"
+        "nave texto-d"
 }
 
 .bienvenida h1 {
+    grid-area: titulo;
     width: 100%;
     color: var(--color-1);
     font-family: var(--font-1);
@@ -166,8 +170,8 @@ body.contacto nav a:nth-child(8) {
 }
 
 .bienvenida p {
-    margin-left: 50%;
-    width: 50%;
+    grid-area: texto-d;
+    width: 100%;
     color: var(--color-3);
     font-family: var(--font-2);
     font-size: 15px;
@@ -196,7 +200,7 @@ body.contacto nav a:nth-child(8) {
         1px -1px 1px var(--color-5),
         -1px 1px 1px var(--color-5),
         1px 1px 1px var(--color-5);
-    padding: 150px 30px 0px 30px;
+    padding: 100px 30px 0px 30px;
 }
 
 .razones h2 {

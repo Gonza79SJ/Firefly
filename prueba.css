@@ -1,0 +1,17 @@
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px); /* Sube 15 píxeles */
+  }
+  100% {
+    transform: translateY(0px); /* Vuelve a la posición inicial */
+  }
+}
+
+/* Clase para la imagen de la nave */
+.nave-flotante {
+  animation: flotar 4s ease-in-out infinite; /* Animación infinita y suave */
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5)); /* Sombra suave para dar profundidad */
+}
