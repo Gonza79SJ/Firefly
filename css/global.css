@@ -8,6 +8,13 @@
     color: inherit;
 }
 
+.page{
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+
 @font-face {
     font-family: 'firefly';
     src: url('../font/nuptial-bt.woff2') format('woff2');
@@ -35,8 +42,6 @@ body {
     flex-direction: column;
     background-color: var(--color-5);
     margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
     font-family: var(--font-1), var(--font-2), var(--font-3), var(--font-4);
 }
 
@@ -45,10 +50,12 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    z-index: 1000;
 }
 
 .efecto-header {
-    position: relative;
+    position: fixed;
+    top: 0;
     background-color: #0b0c10;
     border-bottom: 1px solid #1f2833;
     overflow: hidden;
@@ -83,6 +90,8 @@ header {
 
 
 main {
+    position: relative;
+    padding-top: 101px;
     display: flex;
     flex-direction: column;
     align-items: center;

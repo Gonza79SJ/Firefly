@@ -1,3 +1,10 @@
+
+.header {
+    position: fixed ;
+    top: 0;
+    z-index: 1000;
+}
+
 .contenedor-fichas {
     color: var(--color-1);
     font-family: var(--font-2);
@@ -10,6 +17,8 @@
 }
 
 .actor {
+    position: sticky;
+    top: 101px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,6 +30,33 @@
     padding: 20px;
 }
 
+
+/* ============================================================
+   Probando efecto brillo
+   ============================================================ */
+.shimmer{
+position: relative;
+overflow: hidden;
+
+}
+
+.shimmer::after {
+content: '';
+position: absolute;
+inset: 0;
+background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.178) 50%, transparent 60%);
+transform: translateX(-100%);
+animation: shimmer 2s ;
+}   
+
+.shimmer:hover::after {
+content: '';
+position: absolute;
+inset: 0;
+background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.178) 50%, transparent 60%);
+transform: translateX(-100%);
+animation: shimmer 2s linear infinite;
+}   
 
 
 /* ============================================================
