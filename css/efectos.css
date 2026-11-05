@@ -22,14 +22,21 @@
   }
 }
 
-.nave-flotante {
-  grid-area: nave;
-  justify-self: center;
-  width: 100%;
-  /* transform: translate(50%, 50%); */
-  animation: flotar 4s ease-in-out infinite;
-  filter: drop-shadow(20px 5px 10px rgba(0, 0, 0, 0.85))  ;    
-    /* drop-shadow(-15px 0px 20px rgba(255, 120, 0, 0.75))    
-    drop-shadow(-8px 0px 8px rgba(255, 200, 50, 0.9)); */
-  /* filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5)); */
+@keyframes flujoCorrienteDer {
+  0% { background-position: 0% 0; }
+  100% { background-position: 400px 0; }
+}
+
+@keyframes flujoCorrienteIzq {
+  0% { background-position: 400px 0; }
+  100% { background-position: 0% 0; }
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
