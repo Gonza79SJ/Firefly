@@ -292,6 +292,7 @@ nav {
     background-size: cover;
     background-position: center;
     height: 740px;
+    filter: brightness(0.7);
 }
 
 .bienvenida {
@@ -412,7 +413,6 @@ nav {
 hr {
     background: black;
     width: 50%;
-    height: px;
     border: none;
     background-color: var(--color-1);
     margin: 0 auto;

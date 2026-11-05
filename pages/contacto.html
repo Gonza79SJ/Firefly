@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
@@ -19,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comms - Firefly Fansite</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,40 +41,41 @@
 
         <nav>
             <div class="boton"><a href="../index.html" class="btn-led ">
-                <span class="btn-text">Cabina</span>
-            </a></div>
+                    <span class="btn-text">Cabina</span>
+                </a></div>
             <div class="boton"><a href="./episodios.html" class="btn-led">
-                <span class="btn-text">Bitacora</span>
-            </a></div>
+                    <span class="btn-text">Bitacora</span>
+                </a></div>
             <div class="boton"><a href="./reparto.html" class="btn-led">
-                <span class="btn-text">Tripulación</span>
-            </a></div>  
+                    <span class="btn-text">Tripulación</span>
+                </a></div>
             <div class="boton"><a href="./videos.html" class="btn-led">
-                <span class="btn-text">Transmisiones</span>
-            </a></div>
+                    <span class="btn-text">Transmisiones</span>
+                </a></div>
             <div class="boton"><a href="./produccion.html" class="btn-led">
-                <span class="btn-text">Taller</span>
-            </a></div>
+                    <span class="btn-text">Taller</span>
+                </a></div>
             <div class="boton"><a href="./curiosidades.html" class="btn-led">
-                <span class="btn-text">Archivo</span>
-            </a></div>
+                    <span class="btn-text">Archivo</span>
+                </a></div>
             <div class="boton"><a href="./sobre.html" class="btn-led">
-                <span class="btn-text">Del Piloto</span>
-            </a></div>
+                    <span class="btn-text">Del Piloto</span>
+                </a></div>
             <div class="boton"><a href="./contacto.html" class="btn-led pagina_actual">
-                <span class="btn-text">Comms</span>
-            </a></div>
+                    <span class="btn-text">Comms</span>
+                </a></div>
         </nav>
     </header>
 
-    <main>
+    <main class="banner">
+
         <h1 class="subtitulo">Unite a la Tripulación de la Serenity</h1>
         <p class="bajada">Elegí la forma que prefieras para ponerte en contacto con nuestra base de datos de Browncoats.
         </p>
 
 
         <div class="contenedor-contacto-flex">
-            <section class="caja datos-contacto">
+            <section class="caja datos-contacto blur">
                 <h2>Información de Contacto</h2>
                 <p><strong>Teléfono de la Frontera:</strong> +54 9 11 3104-1703</p>
                 <p><strong>Correo Electrónico:</strong> tripulacion@serenityfansite.com</p>
@@ -85,42 +87,58 @@
                 </ul>
             </section>
 
-            <!-- Sección del Formulario trucho  -->
-            <section class="caja seccion-formulario">
+            <section class="caja seccion-formulario blur">
                 <h2>Formulario de Registro (Simulado)</h2>
-                <p class="instrucciones">Complete los siguientes datos de manera simbólica para el envío de sugerencias:
+                <p class="instrucciones">Complete los siguientes datos para el envío de sugerencias:
                 </p>
 
 
-                <div class="falso-form">
+                <form class="form" action="./enviado.html" method="get">
 
                     <div class="campo">
-                        <p class="label">Nombre y Apellido:</p>
-                        <span class="input"></span>
+                        <label class="label" for="nombre">Nombre y Apellido:
+                            <input type="text" id="nombre" name="nombre" class="input" required>
+                        </label>
                     </div>
 
                     <div class="campo">
-                        <p class="label">Correo de la Alianza o Independiente:</p>
-                        <span class="input"></span>
+                        <label class="label" for="correo">Correo de la Alianza o Independiente:
+                            <input type="email" id="correo" name="correo" class="input" required>
+                        </label>
                     </div>
 
                     <div class="campo">
-                        <p class="label">Planeta de Origen:</p>
-                        <span class="input"></span>
+                        <label class="label" for="planeta">Planeta de Origen:
+                            <select name="planeta" id="planeta">
+                                <option value="" disabled selected>-- Elige un planeta --</option>
+                                <option value="mercurio">Mercurio</option>
+                                <option value="venus">Venus</option>
+                                <option value="tierra">Tierra</option>
+                                <option value="marte">Marte</option>
+                                <option value="jupiter">Júpiter</option>
+                                <option value="saturno">Saturno</option>
+                                <option value="urano">Urano</option>
+                                <option value="neptuno">Neptuno</option>
+                                <!-- Opcional: Planeta enano -->
+                                <option value="pluton">Plutón (Planeta enano)</option>
+                            </select>
+                        </label>
+                        <p>*por ahora solo del Sistema Solar</p>
                     </div>
 
                     <div class="campo">
-                        <p class="label">Mensaje para el Capitán:</p>
-
-                        <span class="input falso-textarea"></span>
+                        <label class="label" for="mensaje">Mensaje para el Capitán:
+                            <textarea id="mensaje" name="mensaje" class="input textarea" required></textarea>
+                        </label>
                     </div>
 
                     <div class="botones">
-                        <span class="btn-simulado enviar">Enviar Datos</span>
-                        <span class="btn-simulado borrar">Borrar Campos</span>
+                        <button type="submit" class="btn enviar">Enviar</button>
+                        <button type="reset" class="btn borrar">Borrar</button>
+
                     </div>
 
-                </div>
+                </form>
             </section>
         </div>
     </main>
