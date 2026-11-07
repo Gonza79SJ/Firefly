@@ -140,7 +140,6 @@ main {
     background-image: url('../img/fondo_espacio.jpeg');
     background-size: cover;
     background-position: center;
-    height: 740px;
     filter: brightness(0.7);
 }
 

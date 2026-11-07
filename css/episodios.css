@@ -115,6 +115,7 @@ main ol li {
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid var(--color-4);
+    scroll-margin-top: 150px;
 }
 
 .seccion-temporada {

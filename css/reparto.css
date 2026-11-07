@@ -1,10 +1,4 @@
 
-.header {
-    position: fixed ;
-    top: 0;
-    z-index: 1000;
-}
-
 h1 {
 position: sticky;
 top: 105px;;
@@ -15,7 +9,7 @@ top: 105px;;
     font-family: var(--font-2);
     text-shadow: 1px 1px black;
     display: grid;
-    gap: 10px;
+    gap: 20px;
     padding: 0 30px;
 }
 
@@ -25,7 +19,7 @@ top: 105px;;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 10px;
+    gap: 20px;
     width: 90%;
     max-width: 1050px;
     margin: 0 auto;
