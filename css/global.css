@@ -140,7 +140,10 @@ main {
     background-image: url('../img/fondo_espacio.jpeg');
     background-size: cover;
     background-position: center;
-    filter: brightness(0.7);
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    /* filter: brightness(0.7); */
 }
 
 .bienvenida {
@@ -212,6 +215,7 @@ main {
         -1px 1px 1px var(--color-5),
         1px 1px 1px var(--color-5);
     padding: 100px 30px 0px 30px;
+    animation: slide-in-left 2s cubic-bezier(.25, .46, .45, .94) both
 }
 
 .razones h2 {
@@ -245,8 +249,15 @@ main {
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.7;
+    /* position: absolute; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: opacity 0.8s ease-in-out; 
+    cursor: pointer;
+    animation: scale-up-ver-bottom .10s cubic-bezier(.39, .575, .565, 1.000) both, fade-in 1.2s cubic-bezier(.39, .575, .565, 1.000) both
+    
 
 }
+
 
 .proximos-pasos h2 {
     font-size: 28px;
@@ -255,20 +266,24 @@ main {
     /* text-shadow: 2px 2px 4px var(--color-4); */
 }
 
-.proximos-pasos span {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    width: 100%;
-    justify-content: space-around;
 
-}
-
-.proximos-pasos a {
+/* .proximos-pasos span {
     width: 18%;
     line-height: 20px;
     font-size: 15px;
-    color: var(--color-4);
+    position: relative;
+    } */
+
+.scale-up-ver-bottom {
+    animation: scale-up-ver-bottom .6s cubic-bezier(.39, .575, .565, 1.000) both
+}
+
+.fade-in {
+    animation: fade-in 1.2s cubic-bezier(.39, .575, .565, 1.000) both
+}
+
+.slide-in-left {
+    overflow: hidden;
 }
 
 hr {
@@ -278,6 +293,93 @@ hr {
     background-color: var(--color-1);
     margin: 0 auto;
 }
+
+.contenedor-efecto {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+    font-size: 20px;
+    position: relative;
+    justify-content: space-around;
+    opacity: 0;
+    transition: display 0.3s allow-discrete ease-in-out, opacity 0.3s ease-in-out;
+    
+    span {
+        font-size: .9rem;
+    }
+
+}
+
+.proximos-pasos:hover .contenedor-efecto {
+    display: flex;
+    opacity: 1;
+
+    @starting-style {
+        opacity: 0;
+    }
+}
+
+
+.btn {
+    /* letter-spacing: 0.1em; */
+    cursor: pointer;
+    font-size: .9rem;
+    /* font-weight: 400; */
+    /* line-height: 45px; */
+    /* width: 160px; */
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.efecto {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #000000; */
+    /* outline: solid 2px #000000; */
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+.efecto::before,
+.efecto span {
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+.efecto:hover span {
+    transform: translateY(-100%) scale(-0.001, 20);
+}
+
+.efecto::before {
+    content: attr(data-sm-link-text);
+    color: var(--color-3);
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(500%) scale(-0.001, 20);
+}
+
+.efecto:hover::before {
+    letter-spacing: 0.05em;
+    transform: translateY(0) scale(1, 1);
+}
+
+
+
+
+
+
 
 footer {
     /* background-color: black; */
