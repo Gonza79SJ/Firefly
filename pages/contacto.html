@@ -20,7 +20,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comms - Firefly Fansite</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,34 +77,59 @@
 
         <div class="contenedor-contacto-flex">
             <section class="caja datos-contacto blur">
-                <h2>Información de Contacto</h2>
-                <p><strong>Teléfono de la Frontera:</strong> +54 9 11 3104-1703</p>
-                <p><strong>Correo Electrónico:</strong> tripulacion@serenityfansite.com</p>
-                <p><strong>Frecuencias de Radio (Redes Sociales):</strong></p>
+                <div class="terminal-header">
+                    <h2><i class="fa-solid fa-satellite-dish comms-light"></i> CONSOLA COMUNICACIONES</h2>
+                </div>
+
+                <p class="dato-sistema">
+                    <strong><i class="fa-solid fa-phone-volume"></i> Teléfono de la Frontera:</strong>
+                    <span>+54 9 11 3104-1703</span>
+                </p>
+
+                <p class="dato-sistema">
+                    <strong><i class="fa-solid fa-envelope-open-text"></i> Correo Electrónico:</strong>
+                    <a href="mailto:tripulacion@serenityfansite.com">tripulacion@serenityfansite.com</a>
+                </p>
+
+                <p class="frecuencias-titulo"><strong>Frecuencias de Radio <br></strong>(Redes Sociales):</p>
                 <ul>
-                    <li><strong>Instagram:</strong> @FireflyBrowncoats</li>
-                    <li><strong>X (Twitter):</strong> @SerenityFansite</li>
-                    <li><strong>GitHub del Proyecto:</strong> https://github.com</li>
+                    <li>
+                        <span class="social-brand">
+                            <i class="fa-brands fa-instagram"></i> <span>Instagram:</span>
+                        </span>
+                        <a href="https://instagram.com" target="_blank">@FireflyBrowncoats</a>
+                    </li>
+                    <li>
+                        <span class="social-brand">
+                            <i class="fa-brands fa-x-twitter"></i> <span>X (Twitter):</span>
+                        </span>
+                        <a href="https://x.com" target="_blank">@SerenityFansite</a>
+                    </li>
+                    <li>
+                        <span class="social-brand">
+                            <i class="fa-brands fa-github"></i> <span>GitHub del Proyecto:</span>
+                        </span>
+                        <a href="https://github.com" target="_blank">https://github.com</a>
+                    </li>
                 </ul>
             </section>
 
             <section class="caja seccion-formulario blur">
-                <h2>Formulario de Registro (Simulado)</h2>
-                <p class="instrucciones">Complete los siguientes datos para el envío de sugerencias:
-                </p>
-
+                <h2>Envianos una Señal</h2>
 
                 <form class="form" action="./enviado.html" method="get">
 
                     <div class="campo">
                         <label class="label" for="nombre">Nombre y Apellido:
-                            <input type="text" id="nombre" name="nombre" class="input" required>
+                            <input type="text" id="nombre" placeholder="Ej. Malcolm Reynolds..." name="nombre"
+                                class="input" required>
                         </label>
                     </div>
 
                     <div class="campo">
                         <label class="label" for="correo">Correo de la Alianza o Independiente:
-                            <input type="email" id="correo" name="correo" class="input" required>
+                            <input type="email" id="correo" placeholder="nombre@cortex.net..." name="correo"
+                                class="input" required>
                         </label>
                     </div>
 
@@ -119,7 +145,6 @@
                                 <option value="saturno">Saturno</option>
                                 <option value="urano">Urano</option>
                                 <option value="neptuno">Neptuno</option>
-                                <!-- Opcional: Planeta enano -->
                                 <option value="pluton">Plutón (Planeta enano)</option>
                             </select>
                         </label>
@@ -128,13 +153,17 @@
 
                     <div class="campo">
                         <label class="label" for="mensaje">Mensaje para el Capitán:
-                            <textarea id="mensaje" name="mensaje" class="input textarea" required></textarea>
+                            <textarea id="mensaje" name="mensaje"
+                                placeholder="Escribe tus coordenadas o detalles del encargo..." class="input textarea"
+                                required></textarea>
                         </label>
                     </div>
 
                     <div class="botones">
-                        <button type="submit" class="btn enviar">Enviar</button>
-                        <button type="reset" class="btn borrar">Borrar</button>
+                        <button type="submit" class="btn enviar">Transmitir
+                            <i class="fa-solid fa-shuttle-space comms-light"></i>
+                        </button>
+                        <button type="reset" class="btn borrar">Reiniciar</button>
 
                     </div>
 
