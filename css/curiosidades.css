@@ -88,11 +88,17 @@ hr {
     width: 100%;
     height: auto;
     text-align: justify;
+
+h2{
+    text-shadow: 2px 2px 2px black;
+}
+
 }
 
 #glosario p {
-    font-size: 1.2rem;
-    padding: 20px 50px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 0px 80px;
 }
 
 .fichas {
@@ -110,7 +116,7 @@ hr {
     border-radius: 10px;
     flex: 1 1 240px;
     max-width: 265px;
-    height: 600px;
+    height: 500px;
     margin: 0;
     box-shadow: 2px 2px 6px var(--color-4);
     display: flex;
