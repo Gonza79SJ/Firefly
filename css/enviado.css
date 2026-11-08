@@ -1,6 +1,6 @@
 .enviado {
     background-image: url('../img/firefly_404.webp');
-    background-position: right;
+    background-attachment: scroll;
     align-items: center;
     height: 740px;
 
