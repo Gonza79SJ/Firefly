@@ -27,8 +27,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caacupe+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/produccion.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 
@@ -38,7 +41,11 @@
             <img class="logo" src="../img/firefly_logo.png" alt="Logo de Firefly">
             <a class="firefly" href="../index.html"> firefly</a>
         </div>
-
+        <input type="checkbox" id="menu-check" class="menu-check">
+        <label for="menu-check" class="menu-icon" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars icono-abrir"></i>
+            <i class="fa-solid fa-xmark icono-cerrar"></i>
+        </label>
         <nav>
             <div class="boton"><a href="../index.html" class="btn-led ">
                     <span class="btn-text">Cabina</span>
@@ -169,43 +176,49 @@
 
         <section id="banda-sonora">
             <h2>La Identidad Musical y su Banda Sonora</h2>
-            
+
             <div class="banda-contenedor">
-            <div class="banda-texto">
-                <p>
-                    El componente sonoro fue vital para cementar la atmósfera del western espacial. El tema de apertura,
-                    <strong>"The Ballad of Serenity"</strong>, fue escrito por el propio Joss Whedon e interpretado por
-                    el músico
-                    de blues Sonny Rhodes. Sus versos sintetizan la filosofía de supervivencia y libertad del Capitán
-                    Mal Reynolds:
-                </p>
+                <div class="banda-texto">
+                    <p>
+                        El componente sonoro fue vital para cementar la atmósfera del western espacial. El tema de
+                        apertura,
+                        <strong>"The Ballad of Serenity"</strong>, fue escrito por el propio Joss Whedon e interpretado
+                        por
+                        el músico
+                        de blues Sonny Rhodes. Sus versos sintetizan la filosofía de supervivencia y libertad del
+                        Capitán
+                        Mal Reynolds:
+                    </p>
 
-                <p>
-                    La composición del resto de la banda sonora estuvo a cargo de <strong>Greg Edmonson</strong>, quien
-                    fusionó de manera
-                    brillante instrumentos tradicionales como el violín, el banjo y la guitarra acústica con arreglos
-                    étnicos asiáticos,
-                    reflejando el crisol cultural del sistema estelar.
-                </p>
-                <figure>
-                    <img src="../img/produccion/gregedmonson.webp" alt="El compositor Greg Edmonson" width="400">
-                    <figcaption>Greg Edmonson, responsable de mezclar acordes de violín y banjo con influencias
-                        musicales asiáticas.</figcaption>
-                </figure>
-            </div>
-            <div class="banda-otros">
-                <blockquote>
-                    <p>"Quítame la tierra, quítame el mar, llévame a donde no pueda estar. No me importa, sigo libre, no
-                        puedes quitarme el cielo..." <br><small>(Traducido al español)</small></p>
-    
-                </blockquote>
+                    <p>
+                        La composición del resto de la banda sonora estuvo a cargo de <strong>Greg Edmonson</strong>,
+                        quien
+                        fusionó de manera
+                        brillante instrumentos tradicionales como el violín, el banjo y la guitarra acústica con
+                        arreglos
+                        étnicos asiáticos,
+                        reflejando el crisol cultural del sistema estelar.
+                    </p>
+                    <figure>
+                        <img src="../img/produccion/gregedmonson.webp" alt="El compositor Greg Edmonson" width="400">
+                        <figcaption>Greg Edmonson, responsable de mezclar acordes de violín y banjo con influencias
+                            musicales asiáticas.</figcaption>
+                    </figure>
+                </div>
+                <div class="banda-otros">
+                    <blockquote>
+                        <p>"Quítame la tierra, quítame el mar, llévame a donde no pueda estar. No me importa, sigo
+                            libre, no
+                            puedes quitarme el cielo..." <br><small>(Traducido al español)</small></p>
 
-                <iframe data-testid="embed-iframe" title="Banda Sonido en SPotify" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/album/6ButBCHMCLFEKJEtotSm65?utm_source=generator&theme=0&si=ae292f3ff86e46ab"
-                    allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" width="400"
-                    loading="lazy"></iframe>
-            </div>
+                    </blockquote>
+
+                    <iframe data-testid="embed-iframe" title="Banda Sonido en SPotify" style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/6ButBCHMCLFEKJEtotSm65?utm_source=generator&theme=0&si=ae292f3ff86e46ab"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" width="400"
+                        loading="lazy"></iframe>
+                </div>
             </div>
 
 

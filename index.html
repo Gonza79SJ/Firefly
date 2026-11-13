@@ -24,10 +24,13 @@
     <title>Cabina - Firefly Fansite</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caacupe+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body class="index page">
@@ -36,32 +39,36 @@
             <img class="logo" src="./img/firefly_logo.png" alt="Logo de Firefly">
             <span class="firefly"> firefly</span>
         </div>
-
+        <input type="checkbox" id="menu-check" class="menu-check">
+        <label for="menu-check" class="menu-icon" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars icono-abrir"></i>
+            <i class="fa-solid fa-xmark icono-cerrar"></i>
+        </label>
         <nav>
             <div class="boton"><a href="index.html" class="btn-led pagina_actual">
-                <span class="btn-text">Cabina</span>
-            </a></div>
+                    <span class="btn-text">Cabina</span>
+                </a></div>
             <div class="boton"><a href="./pages/episodios.html" class="btn-led">
-                <span class="btn-text">Bitacora</span>
-            </a></div>
+                    <span class="btn-text">Bitacora</span>
+                </a></div>
             <div class="boton"><a href="./pages/reparto.html" class="btn-led">
-                <span class="btn-text">Tripulación</span>
-            </a></div>  
+                    <span class="btn-text">Tripulación</span>
+                </a></div>
             <div class="boton"><a href="./pages/videos.html" class="btn-led">
-                <span class="btn-text">Transmisiones</span>
-            </a></div>
+                    <span class="btn-text">Transmisiones</span>
+                </a></div>
             <div class="boton"><a href="./pages/produccion.html" class="btn-led">
-                <span class="btn-text">Taller</span>
-            </a></div>
+                    <span class="btn-text">Taller</span>
+                </a></div>
             <div class="boton"><a href="./pages/curiosidades.html" class="btn-led">
-                <span class="btn-text">Archivo</span>
-            </a></div>
+                    <span class="btn-text">Archivo</span>
+                </a></div>
             <div class="boton"><a href="./pages/sobre.html" class="btn-led">
-                <span class="btn-text">Del Piloto</span>
-            </a></div>
+                    <span class="btn-text">Del Piloto</span>
+                </a></div>
             <div class="boton"><a href="./pages/contacto.html" class="btn-led">
-                <span class="btn-text">Comms</span>
-            </a></div>
+                    <span class="btn-text">Comms</span>
+                </a></div>
         </nav>
     </header>
 
@@ -91,7 +98,7 @@
                 <a href="./pages/reparto.html" class="btn efecto" data-sm-link-text="Vamos!">
                     <span>Conocé a la Tripulación</span>
                 </a>
-                 |
+                |
                 <a href="./pages/curiosidades.html" class="btn efecto" data-sm-link-text="Vamos!">
                     <span>Revisa el Archivo de curiosidades</span>
                 </a> |
@@ -104,8 +111,8 @@
                 <a href="./pages/episodios.html" class="btn efecto" data-sm-link-text="Vamos!">
                     <span>Consulta la Bitacora</span>
                 </a>
-                </span>
-            </section>
+            </span>
+        </section>
     </main>
     <hr>
     <footer>
