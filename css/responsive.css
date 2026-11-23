@@ -196,7 +196,7 @@ main {
         .actor {
             flex-direction: column;
             width: 100%;
-            top: 50px;
+            top: -150px;
         }
 
         .sobre main {
