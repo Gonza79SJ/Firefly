@@ -26,20 +26,12 @@ main {
     display: none;
 }
 
-@media (hover: hover) {
-  .proximos-pasos:hover .contenedor-efecto {
-      display: flex;
-      opacity: 1;
-
-      @starting-style {
-          opacity: 0;
-      }
+@media (hover: none) {
+  .proximos-pasos .contenedor-efecto {
+      display: flex !important;
+      opacity: 1 !important;
   }
 }
-
-
-
-
 
 
 
@@ -304,6 +296,46 @@ main {
             #glosario .ficha {
                 min-width: 90%;
             }
+
+            .index {
+                main {
+                    justify-content: space-between;
+                }
+
+                .bienvenida {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        text-align: justify;
+                        font-size: 1em;
+                    }
+
+                }
+
+                .razones {
+                    padding: 0;
+
+                    h2,
+                    li {
+                        width: 100%;
+                    }
+
+                }
+
+                .proximos-pasos {
+                    display: none;
+                }
+
+                h1 {
+                    font-size: 1.5em;
+                }
+
+            }
+
+
+
+
         }
     }
 
