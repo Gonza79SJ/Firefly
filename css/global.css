@@ -56,7 +56,6 @@ header {
     position: fixed;
     top: 0;
     background-color: #0b0c10;
-    border-bottom: 1px solid #1f2833;
     overflow: hidden;
     padding: 10px 0;
 }
@@ -311,15 +310,6 @@ hr {
         font-size: .9rem;
     }
 
-}
-
-.proximos-pasos:hover .contenedor-efecto {
-    display: flex;
-    opacity: 1;
-
-    @starting-style {
-        opacity: 0;
-    }
 }
 
 

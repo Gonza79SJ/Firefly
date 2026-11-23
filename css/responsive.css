@@ -23,12 +23,36 @@ main {
 }
 
 .menu-icon .icono-cerrar {
-  display: none;
+    display: none;
+}
+
+@media (hover: hover) {
+  .proximos-pasos:hover .contenedor-efecto {
+      display: flex;
+      opacity: 1;
+
+      @starting-style {
+          opacity: 0;
+      }
+  }
+}
+
+
+
+
+
+
+
+
+@media (hover: hover) and (pointer: fine) {
+  .mi-boton:hover {
+    background-color: #0056b3;
+  }
 }
 
 @media (max-width: 1110px) {
     .efecto-header {
-        position: relative;
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -84,6 +108,89 @@ main {
 
     main {
         padding-top: 0;
+        margin-top: 100px;
+    }
+
+    .produccion section {
+        position: static;
+        scroll-margin-top: 100px;
+    }
+
+
+    .ficha {
+        min-width: 400px;
+        background-position: top center;
+    }
+
+    /*     
+    .contenedor-fichas {
+        margin-top: 100px;
+    } */
+    @media (max-width: 980px) {
+        #datos-curiosos li {
+            min-height: 200px;
+            gap: 10px;
+
+        }
+
+        .video {
+            width: 90%;
+        }
+
+        #banda-sonora .banda-contenedor,
+        #rescate .rescate-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+
+            .banda-texto,
+            .banda-otros,
+            .rescate-texto {
+                width: 100%;
+                align-items: center;
+
+                blockquote {
+                    margin-bottom: 20px;
+                }
+            }
+
+            figure img {
+                width: 100%;
+                ;
+            }
+        }
+
+
+    }
+
+
+
+
+    @media (max-width: 900px) {
+        .mini-nav {
+            gap: 10px;
+
+        }
+
+        .contenedor-contacto-flex {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .caja {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+
+        .datos-contacto,
+        .seccion-formulario {
+            width: 100%;
+
+        }
+
+
     }
 
     @media (max-width: 768px) {
@@ -93,5 +200,130 @@ main {
             width: 100%;
 
         }
+
+        .actor {
+            flex-direction: column;
+            width: 100%;
+            top: 50px;
+        }
+
+        .sobre main {
+            width: 90%;
+        }
+
+
+
     }
+
+    @media (max-width: 750px) {
+        .efecto-header nav {
+            right: auto;
+            left: 0;
+            width: 100%;
+
+
+        }
+
+        .actor .flip-card {
+            height: 200px;
+
+        }
+
+        .actor .flip-card img {
+            object-position: top;
+        }
+
+        .video-envoltorio {
+            width: 90%;
+        }
+
+        #menu-produccion {
+            display: none;
+        }
+
+        #rescate .rescate-container figure {
+            width: 100%;
+        }
+
+        #rescate .rescate-container figure img {
+            width: 40%;
+        }
+
+
+
+        .seccion-temporada {
+            width: 100%;
+        }
+
+        .lista-episodios {
+            gap: 0;
+
+        }
+
+        .lista-episodios li {
+            width: 100%;
+            justify-content: center;
+        }
+
+
+        .ficha-episodio,
+        .seccion-temporada h2 {
+            display: none;
+        }
+
+        .ficha-episodio:target {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 90%;
+
+        }
+
+        #glosario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
+
+            p {
+                padding: 0;
+                width: 90%;
+            }
+
+            
+        }
+
+        .bajada {
+            padding: 0 10px;
+            width: 90%;
+
+        }
+        
+        @media (max-width: 500px) {
+
+            #glosario .ficha {
+                min-width: 90%;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

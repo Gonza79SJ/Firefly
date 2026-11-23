@@ -1,4 +1,5 @@
-main {
+.contacto main {
+    justify-content: flex-start;
     color: var(--color-1);
 
 }
@@ -12,6 +13,7 @@ main {
     font-size: 1rem;
     margin-bottom: 25px;
 }
+
 
 
 .contenedor-contacto-flex {
